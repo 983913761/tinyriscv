@@ -35,9 +35,9 @@ module clint(
     input wire mem_access_misaligned_i,
 
     // from csr_reg
-    input wire[31:0] csr_mtvec_i,               // mtvec¼Ä´æÆ÷
-    input wire[31:0] csr_mepc_i,                // mepc¼Ä´æÆ÷
-    input wire[31:0] csr_mstatus_i,             // mstatus¼Ä´æÆ÷
+    input wire[31:0] csr_mtvec_i,               // mtvecÌø×ªµ½¸Ã¼Ä´æÆ÷
+    input wire[31:0] csr_mepc_i,                // mepc»úÆ÷Ä£Ê½Òì³£PC¼Ä´æÆ÷
+    input wire[31:0] csr_mstatus_i,             // mstatus»úÆ÷Ä£Ê½×´Ì¬¼Ä´æÆ÷
 
     // to csr_reg
     output reg csr_we_o,                        // Ğ´CSR¼Ä´æÆ÷±êÖ¾

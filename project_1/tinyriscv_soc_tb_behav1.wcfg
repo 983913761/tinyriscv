@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tinyriscv_soc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tinyriscv_soc_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1442900fs"></ZoomStartTime>
+      <ZoomEndTime time="1872901fs"></ZoomEndTime>
+      <Cursor1Time time="1578900fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="266"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/tinyriscv_soc_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/gpio_t" type="array">
+      <obj_property name="ElementShortName">gpio_t[1:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_t[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/gpio_o" type="array">
+      <obj_property name="ElementShortName">gpio_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/exti_flag_i" type="array">
+      <obj_property name="ElementShortName">exti_flag_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">exti_flag_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/exti_req_0" type="logic">
+      <obj_property name="ElementShortName">exti_req_0</obj_property>
+      <obj_property name="ObjectShortName">exti_req_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/exti_ID_0" type="logic">
+      <obj_property name="ElementShortName">exti_ID_0</obj_property>
+      <obj_property name="ObjectShortName">exti_ID_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/exti_req_1" type="logic">
+      <obj_property name="ElementShortName">exti_req_1</obj_property>
+      <obj_property name="ObjectShortName">exti_req_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/Exit_ID" type="logic">
+      <obj_property name="ElementShortName">Exit_ID</obj_property>
+      <obj_property name="ObjectShortName">Exit_ID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/int_addr_o" type="array">
+      <obj_property name="ElementShortName">int_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">int_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/int_assert_o" type="logic">
+      <obj_property name="ElementShortName">int_assert_o</obj_property>
+      <obj_property name="ObjectShortName">int_assert_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/csr_state" type="array">
+      <obj_property name="ElementShortName">csr_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">csr_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/csr_we_o" type="logic">
+      <obj_property name="ElementShortName">csr_we_o</obj_property>
+      <obj_property name="ObjectShortName">csr_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/stall_flag_o" type="logic">
+      <obj_property name="ElementShortName">stall_flag_o</obj_property>
+      <obj_property name="ObjectShortName">stall_flag_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/int_state" type="array">
+      <obj_property name="ElementShortName">int_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">int_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/inst_addr" type="array">
+      <obj_property name="ElementShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/cause" type="array">
+      <obj_property name="ElementShortName">cause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cause[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_plic/exti_ID_1" type="logic">
+      <obj_property name="ElementShortName">exti_ID_1</obj_property>
+      <obj_property name="ObjectShortName">exti_ID_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tinyriscv_soc_tb/tinyriscv_soc_top_0/u_tinyriscv_core/u_ifu/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -16,7 +16,7 @@
 
 `include "../core/defines.v"
 
-// 32ä½å‘ä¸Šè®¡æ•°å®šæ—¶å™¨æ¨¡å—
+// 32Î»ÏòÉÏ¼ÆÊı¶¨Ê±Æ÷Ä£¿é
 module timer(
 
     input wire clk,
@@ -36,21 +36,21 @@ module timer(
 
     );
 
-    // å¯„å­˜å™¨(åç§»)åœ°å€
+    // ¼Ä´æÆ÷(Æ«ÒÆ)µØÖ·
     localparam REG_CTRL  = 4'h0;
     localparam REG_COUNT = 4'h4;
     localparam REG_VALUE = 4'h8;
 
-    // å®šæ—¶å™¨æ§åˆ¶å¯„å­˜å™¨ï¼Œå¯è¯»å¯å†™
-    // bit[0]: å®šæ—¶å™¨ä½¿èƒ½
-    // bit[1]: å®šæ—¶å™¨ä¸­æ–­ä½¿èƒ½
-    // bit[2]: å®šæ—¶å™¨ä¸­æ–­pendingæ ‡å¿—ï¼Œå†™1æ¸…é›¶
+    // ¶¨Ê±Æ÷¿ØÖÆ¼Ä´æÆ÷£¬¿É¶Á¿ÉĞ´
+    // bit[0]: ¶¨Ê±Æ÷Ê¹ÄÜ
+    // bit[1]: ¶¨Ê±Æ÷ÖĞ¶ÏÊ¹ÄÜ
+    // bit[2]: ¶¨Ê±Æ÷ÖĞ¶Ïpending±êÖ¾£¬Ğ´1ÇåÁã
     reg[31:0] timer_ctrl;
 
-    // å®šæ—¶å™¨å½“å‰è®¡æ•°å€¼å¯„å­˜å™¨, åªè¯»
+    // ¶¨Ê±Æ÷µ±Ç°¼ÆÊıÖµ¼Ä´æÆ÷, Ö»¶Á
     reg[31:0] timer_count;
 
-    // å®šæ—¶å™¨æº¢å‡ºå€¼å¯„å­˜å™¨ï¼Œå½“å®šæ—¶å™¨è®¡æ•°å€¼è¾¾åˆ°è¯¥å€¼æ—¶äº§ç”Ÿpendingï¼Œå¯è¯»å¯å†™
+    // ¶¨Ê±Æ÷Òç³öÖµ¼Ä´æÆ÷£¬µ±¶¨Ê±Æ÷¼ÆÊıÖµ´ïµ½¸ÃÖµÊ±²úÉúpending£¬¿É¶Á¿ÉĞ´
     reg[31:0] timer_value;
 
     wire wen = we_i & req_valid_i;
@@ -61,7 +61,7 @@ module timer(
     wire write_reg_ctrl_en = wen & (addr_i[3:0] == REG_CTRL);
     wire write_reg_value_en = wen & (addr_i[3:0] == REG_VALUE);
 
-    // è®¡æ•°
+    // ¼ÆÊı
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             timer_count <= 32'h0;
@@ -79,7 +79,7 @@ module timer(
     end
 
     reg int_sig_r;
-    // äº§ç”Ÿä¸­æ–­ä¿¡å·
+    // ²úÉúÖĞ¶ÏĞÅºÅ
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             int_sig_r <= 1'b0;
@@ -94,7 +94,7 @@ module timer(
 
     assign int_sig_o = int_sig_r;
 
-    // å†™timer_ctrl
+    // Ğ´timer_ctrl
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             timer_ctrl <= 32'h0;
@@ -111,7 +111,7 @@ module timer(
         end
     end
 
-    // å†™timer_value
+    // Ğ´timer_value
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             timer_value <= 32'h0;
@@ -134,7 +134,7 @@ module timer(
     end
 
     reg[31:0] data_r;
-    // è¯»å¯„å­˜å™¨
+    // ¶Á¼Ä´æÆ÷
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             data_r <= 32'h0;

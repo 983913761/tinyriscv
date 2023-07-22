@@ -21,6 +21,8 @@ module tinyriscv_core(
 
     input wire clk,
     input wire rst_n,
+    
+    input wire [1:0] gpio,
 
     output wire[31:0] dbus_addr_o,
     input wire[31:0] dbus_data_i,
@@ -33,7 +35,7 @@ module tinyriscv_core(
     output wire dbus_rsp_ready_o,
 
     output wire[31:0] ibus_addr_o,          // å–æŒ‡åœ°å€
-    input wire[31:0] ibus_data_i,           // å–åˆ°çš„æŒ‡ä»¤å†…å®¹
+    input wire[31:0] ibus_data_i,           // å–åˆ°çš„æŒ‡ä»¤å†…å®?
     output wire[31:0] ibus_data_o,
     output wire[3:0] ibus_sel_o,
     output wire ibus_we_o,
@@ -120,13 +122,21 @@ module tinyriscv_core(
     wire ctrl_flush_o;
     wire[`STALL_WIDTH-1:0] ctrl_stall_o;
 
-    // clintæ¨¡å—è¾“å‡ºä¿¡å·
+    // clintÄ£¿éÊä³öĞÅºÅ
     wire clint_csr_we_o;
     wire[31:0] clint_csr_waddr_o;
     wire[31:0] clint_csr_wdata_o;
     wire clint_stall_flag_o;
     wire[31:0] clint_int_addr_o;
     wire clint_int_assert_o;
+    
+    // plicÄ£¿éÊä³öĞÅºÅ
+    wire plic_csr_we_o;
+    wire[31:0] plic_csr_waddr_o;
+    wire[31:0] plic_csr_wdata_o;
+    wire plic_stall_flag_o;
+    wire[31:0] plic_int_addr_o;
+    wire plic_int_assert_o;
 
     assign dbus_addr_o = ex_mem_addr_o;
     assign dbus_data_o = ex_mem_wdata_o;
@@ -164,6 +174,7 @@ module tinyriscv_core(
         .stall_from_ex_i(ex_hold_flag_o),
         .stall_from_jtag_i(1'b0),
         .stall_from_clint_i(clint_stall_flag_o),
+        .stall_from_plic_i(plic_stall_flag_o),
         .jump_assert_i(ex_jump_flag_o),
         .jump_addr_i(ex_jump_addr_o),
         .flush_o(ctrl_flush_o),
@@ -194,6 +205,9 @@ module tinyriscv_core(
         .clint_we_i(clint_csr_we_o),
         .clint_waddr_i(clint_csr_waddr_o),
         .clint_wdata_i(clint_csr_wdata_o),
+        .plic_we_i(plic_csr_we_o),
+        .plic_waddr_i(plic_csr_waddr_o),
+        .plic_wdata_i(plic_csr_wdata_o),
         .mtvec_o(csr_mtvec_o),
         .mepc_o(csr_mepc_o),
         .mstatus_o(csr_mstatus_o)
@@ -275,8 +289,10 @@ module tinyriscv_core(
         .hold_flag_o(ex_hold_flag_o),
         .jump_flag_o(ex_jump_flag_o),
         .jump_addr_o(ex_jump_addr_o),
-        .int_assert_i(clint_int_assert_o),
-        .int_addr_i(clint_int_addr_o),
+        .plic_int_assert_i(plic_int_assert_o),
+        .plic_int_addr_i(plic_int_addr_o),
+        .clint_int_assert_i(clint_int_assert_o),
+        .clint_int_addr_i(clint_int_addr_o),
         .inst_ecall_o(ex_inst_ecall_o),
         .inst_ebreak_o(ex_inst_ebreak_o),
         .inst_mret_o(ex_inst_mret_o),
@@ -315,4 +331,19 @@ module tinyriscv_core(
         .int_assert_o(clint_int_assert_o)
     );
 
+    plic u_plic(
+       .clk             (clk),
+       .rst_n           (rst_n),
+       .exti_flag_i     (gpio),                  // ÖĞ¶ÏÊäÈëĞÅºÅ
+       .inst_addr_i     (ie_dec_pc_o),          // Ö¸ÁîµØÖ·
+       .csr_mtvec_i     (csr_mtvec_o),          // mtvec¼Ä´æÆ÷
+       .csr_mepc_i      (csr_mepc_o),          // mepc¼Ä´æÆ÷
+       .csr_mstatus_i   (csr_mstatus_o),          // mstatus¼Ä´æÆ÷
+       .csr_we_o        (plic_csr_we_o),          // Ğ´CSR¼Ä´æÆ÷±êÖ¾
+       .csr_waddr_o     (plic_csr_waddr_o),       // Ğ´CSR¼Ä´æÆ÷µØÖ·
+       .csr_wdata_o     (plic_csr_wdata_o),       // Ğ´CSR¼Ä´æÆ÷Êı¾İ
+       .stall_flag_o    (plic_stall_flag_o),          // Á÷Ë®ÏßÔİÍ£±êÖ¾
+       .int_addr_o      (plic_int_addr_o),          // ÖĞ¶ÏÈë¿ÚµØÖ·
+       .int_assert_o    (plic_int_assert_o)           // ÖĞ¶Ï±êÖ¾
+    );
 endmodule

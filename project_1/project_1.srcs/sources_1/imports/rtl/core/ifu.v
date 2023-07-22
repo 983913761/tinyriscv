@@ -16,15 +16,15 @@
 
 `include "defines.v"
 
-// å–æŒ‡æ¨¡å—
+// È¡Ö¸Ä£¿é
 module ifu(
 
     input wire clk,
     input wire rst_n,
 
     input wire flush_i,
-    input wire[31:0] flush_addr_i,             // è·³è½¬åœ°å€
-    input wire[`STALL_WIDTH-1:0] stall_i,      // æµæ°´çº¿æš‚åœæ ‡å¿—
+    input wire[31:0] flush_addr_i,             // Ìø×ªµØÖ·
+    input wire[`STALL_WIDTH-1:0] stall_i,      // Á÷Ë®ÏßÔİÍ£±êÖ¾
     input wire jtag_halt_i,
 
     output wire[31:0] inst_o,
@@ -53,24 +53,24 @@ module ifu(
     wire ifu_req_hsked = (req_valid_o & req_ready_i);
     wire ifu_rsp_hsked = (rsp_valid_i & rsp_ready_o);
 
-    // åœ¨æ‰§è¡Œå¤šå‘¨æœŸæŒ‡ä»¤æˆ–è€…è¯·æ±‚ä¸åˆ°æ€»çº¿æ—¶éœ€è¦æš‚åœ
+    // ÔÚÖ´ĞĞ¶àÖÜÆÚÖ¸Áî»òÕßÇëÇó²»µ½×ÜÏßÊ±ĞèÒªÔİÍ£
     wire stall = stall_i[`STALL_PC] | (~ifu_req_hsked);
 
     reg[31:0] pc;
     reg[31:0] pc_prev;
 
     always @ (posedge clk or negedge rst_n) begin
-        // å¤ä½
+        // ¸´Î»
         if (!rst_n) begin
             pc <= `CPU_RESET_ADDR;
             pc_prev <= 32'h0;
-        // å†²åˆ·
+        // ³åË¢
         end else if (flush_i) begin
             pc <= flush_addr_i;
-        // æš‚åœï¼Œå–ä¸Šä¸€æ¡æŒ‡ä»¤
+        // ÔİÍ££¬È¡ÉÏÒ»ÌõÖ¸Áî
         end else if (stall) begin
             pc <= pc_prev;
-        // å–ä¸‹ä¸€æ¡æŒ‡ä»¤
+        // È¡ÏÂÒ»ÌõÖ¸Áî
         end else begin
             pc <= pc + 32'h4;
             pc_prev <= pc;
@@ -78,7 +78,7 @@ module ifu(
     end
 
     wire[31:0] pc_r;
-    // å°†PCæ‰“ä¸€æ‹
+    // ½«PC´òÒ»ÅÄ
     wire pc_ena = (~stall);
     gen_en_dff #(32) pc_dff(clk, rst_n, pc_ena, pc, pc_r);
 
@@ -106,13 +106,13 @@ module ifu(
 
     wire rsp_switched = ifu_rsp_hsked & (~rsp_hasked_r);
 
-    // æ€»çº¿åˆ‡æ¢æœ‰ä¸¤ç§æƒ…å†µï¼š
-    // 1.è®¿å­˜åœ°å€ä½äºæŒ‡ä»¤å­˜å‚¨å™¨ï¼šå½“è®¿å­˜å®Œæˆåï¼Œifu_req_hskedå’Œifu_rsp_hskedä¿¡å·ä¼šåŒæ—¶ä»0å˜ä¸º1
-    // 2.è®¿å­˜åœ°å€ä¸ä½äºæŒ‡ä»¤å­˜å‚¨å™¨ï¼šå½“è®¿å­˜å®Œæˆåï¼Œifu_req_hskedå…ˆä»0å˜ä¸º1å’Œifu_rsp_hskedåä»0å˜ä¸º1
-    // åªæœ‰ç¬¬2ç§æƒ…å†µä¸‹å–å‡ºæ¥çš„æŒ‡ä»¤æ˜¯æœ‰æ•ˆçš„ï¼Œè¿™é‡Œè¦æŠŠè¿™ä¸¤ç§æƒ…å†µè¯†åˆ«å‡ºæ¥
+    // ×ÜÏßÇĞ»»ÓĞÁ½ÖÖÇé¿ö£º
+    // 1.·Ã´æµØÖ·Î»ÓÚÖ¸Áî´æ´¢Æ÷£ºµ±·Ã´æÍê³Éºó£¬ifu_req_hskedºÍifu_rsp_hskedĞÅºÅ»áÍ¬Ê±´Ó0±äÎª1
+    // 2.·Ã´æµØÖ·²»Î»ÓÚÖ¸Áî´æ´¢Æ÷£ºµ±·Ã´æÍê³Éºó£¬ifu_req_hskedÏÈ´Ó0±äÎª1ºÍifu_rsp_hskedºó´Ó0±äÎª1
+    // Ö»ÓĞµÚ2ÖÖÇé¿öÏÂÈ¡³öÀ´µÄÖ¸ÁîÊÇÓĞĞ§µÄ£¬ÕâÀïÒª°ÑÕâÁ½ÖÖÇé¿öÊ¶±ğ³öÀ´
     wire bus_switched = req_switched & rsp_switched;
 
-    // å–æŒ‡åœ°å€
+    // È¡Ö¸µØÖ·
     assign ibus_addr_o = pc;
     assign pc_o = pc_r;
     wire inst_valid = ifu_rsp_hsked & (~flush_i) & (~bus_switched);

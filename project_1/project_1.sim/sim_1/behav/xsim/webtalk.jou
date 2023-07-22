@@ -2,8 +2,8 @@
 # Webtalk v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Jul 17 20:31:37 2023
-# Process ID: 16456
+# Start of session at: Fri Jul 21 07:34:49 2023
+# Process ID: 10280
 # Current directory: C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tinyriscv_soc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log

@@ -24,7 +24,7 @@ module tinyriscv_soc_top(
 
     output wire halted_ind,  // jtag是否已经halt住CPU信号
 
-    output wire uart_tx_pin, // UART发送引脚
+    output wire uart_tx_pin, // UART发�?�引�?
     input wire uart_rx_pin,  // UART接收引脚
 
     inout wire[1:0] gpio,    // GPIO引脚
@@ -175,6 +175,8 @@ module tinyriscv_soc_top(
     tinyriscv_core u_tinyriscv_core(
         .clk(clk),
         .rst_n(rst_n),
+        
+        .gpio(gpio),
 
         // 指令总线
         .ibus_addr_o(m0_addr_i),
@@ -202,7 +204,7 @@ module tinyriscv_soc_top(
         .int_i(int_flag)
     );
 
-    // 指令存储器
+    // 指令存储�?
     rom #(
         .DP(`ROM_DEPTH)
     ) u_rom(
@@ -219,7 +221,7 @@ module tinyriscv_soc_top(
         .rsp_ready_i(s0_rsp_rdy_o)
     );
 
-    // 数据存储器
+    // 数据存储�?
     ram #(
         .DP(`RAM_DEPTH)
     ) u_ram(

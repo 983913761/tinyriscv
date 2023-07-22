@@ -16,26 +16,32 @@
 
 `include "defines.v"
 
-// CSRå¯„å­˜å™¨æ¨¡å—
+// CSR¼Ä´æÆ÷Ä£¿é
 module csr_reg(
 
     input wire clk,
     input wire rst_n,
 
     // exu
-    input wire exu_we_i,                    // exuæ¨¡å—å†™å¯„å­˜å™¨æ ‡å¿—
-    input wire[31:0] exu_waddr_i,           // exuæ¨¡å—å†™å¯„å­˜å™¨åœ°å€
-    input wire[31:0] exu_wdata_i,           // exuæ¨¡å—å†™å¯„å­˜å™¨æ•°æ®
-    input wire[31:0] exu_raddr_i,           // exuæ¨¡å—è¯»å¯„å­˜å™¨åœ°å€
-    output wire[31:0] exu_rdata_o,          // exuæ¨¡å—è¯»å¯„å­˜å™¨æ•°æ®
+    input wire exu_we_i,                    // exuÄ£¿éĞ´¼Ä´æÆ÷±êÖ¾
+    input wire[31:0] exu_waddr_i,           // exuÄ£¿éĞ´¼Ä´æÆ÷µØÖ·
+    input wire[31:0] exu_wdata_i,           // exuÄ£¿éĞ´¼Ä´æÆ÷Êı¾İ
+    input wire[31:0] exu_raddr_i,           // exuÄ£¿é¶Á¼Ä´æÆ÷µØÖ·
+    output wire[31:0] exu_rdata_o,          // exuÄ£¿é¶Á¼Ä´æÆ÷Êı¾İ
 
     // clint
-    input wire clint_we_i,                  // clintæ¨¡å—å†™å¯„å­˜å™¨æ ‡å¿—
-    input wire[31:0] clint_waddr_i,         // clintæ¨¡å—å†™å¯„å­˜å™¨åœ°å€
-    input wire[31:0] clint_wdata_i,         // clintæ¨¡å—å†™å¯„å­˜å™¨æ•°æ®
-    output wire[31:0] mtvec_o,              // mtvecå¯„å­˜å™¨å€¼
-    output wire[31:0] mepc_o,               // mepcå¯„å­˜å™¨å€¼
-    output wire[31:0] mstatus_o             // mstatuså¯„å­˜å™¨å€¼
+    input wire clint_we_i,                  // clintÄ£¿éĞ´¼Ä´æÆ÷±êÖ¾
+    input wire[31:0] clint_waddr_i,         // clintÄ£¿éĞ´¼Ä´æÆ÷µØÖ·
+    input wire[31:0] clint_wdata_i,         // clintÄ£¿éĞ´¼Ä´æÆ÷Êı¾İ
+    
+    //plic
+    input wire plic_we_i,                  // clintÄ£¿éĞ´¼Ä´æÆ÷±êÖ¾
+    input wire[31:0] plic_waddr_i,         // clintÄ£¿éĞ´¼Ä´æÆ÷µØÖ·
+    input wire[31:0] plic_wdata_i,         // clintÄ£¿éĞ´¼Ä´æÆ÷Êı¾İ
+    
+    output wire[31:0] mtvec_o,              // mtvec¼Ä´æÆ÷Öµ
+    output wire[31:0] mepc_o,               // mepc¼Ä´æÆ÷Öµ
+    output wire[31:0] mstatus_o             // mstatus¼Ä´æÆ÷Öµ
 
     );
 
@@ -52,7 +58,7 @@ module csr_reg(
     assign mstatus_o = mstatus;
 
     // cycle counter
-    // å¤ä½æ’¤é”€åå°±ä¸€ç›´è®¡æ•°
+    // ¸´Î»³·Ïúºó¾ÍÒ»Ö±¼ÆÊı
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             cycle <= {32'h0, 32'h0};
@@ -61,11 +67,16 @@ module csr_reg(
         end
     end
 
-    wire we = exu_we_i | clint_we_i;
-    wire[31:0] waddr = exu_we_i? exu_waddr_i: clint_waddr_i;
-    wire[31:0] wdata = exu_we_i? exu_wdata_i: clint_wdata_i;
+    wire we = exu_we_i | clint_we_i | plic_we_i;
+    wire[31:0] waddr = exu_we_i? exu_waddr_i: 
+                        clint_we_i ? clint_waddr_i:
+                        plic_waddr_i;
+                        
+    wire[31:0] wdata = exu_we_i? exu_wdata_i:
+                        clint_we_i? clint_wdata_i:
+                        plic_wdata_i;
 
-    // å†™å¯„å­˜å™¨
+    // Ğ´¼Ä´æÆ÷
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             mtvec <= 32'h0;
@@ -102,7 +113,7 @@ module csr_reg(
 
     reg[31:0] exu_rdata;
 
-    // exuæ¨¡å—è¯»CSRå¯„å­˜å™¨
+    // exuÄ£¿é¶ÁCSR¼Ä´æÆ÷
     always @ (*) begin
         case (exu_raddr_i[11:0])
             `CSR_CYCLE: begin

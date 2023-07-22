@@ -16,7 +16,7 @@
 
 `include "defines.v"
 
-// 流水线控制模块
+// 流水线控制模�?
 // 发出暂停、冲刷流水线信号
 module pipe_ctrl(
 
@@ -27,6 +27,7 @@ module pipe_ctrl(
     input wire stall_from_ex_i,
     input wire stall_from_jtag_i,
     input wire stall_from_clint_i,
+    input wire stall_from_plic_i,
     input wire jump_assert_i,
     input wire[31:0] jump_addr_i,
 
@@ -37,12 +38,12 @@ module pipe_ctrl(
     );
 
     assign flush_addr_o = jump_addr_i;
-    assign flush_o = jump_assert_i | stall_from_clint_i;
+    assign flush_o = jump_assert_i | stall_from_clint_i | stall_from_plic_i;
 
     reg[`STALL_WIDTH-1:0] stall;
 
     always @ (*) begin
-        if (stall_from_ex_i | stall_from_clint_i) begin
+        if (stall_from_ex_i | stall_from_clint_i | stall_from_plic_i) begin
             stall[`STALL_EX] = 1'b1;
             stall[`STALL_ID] = 1'b1;
             stall[`STALL_IF] = 1'b1;

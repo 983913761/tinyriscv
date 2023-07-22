@@ -16,8 +16,8 @@
 
 `define CPU_RESET_ADDR       32'h0           // CPU复位地址
 `define CPU_CLOCK_HZ         50000000        // CPU时钟(50MHZ)
-`define INST_MEM_START_ADDR  32'h0           // 指令存储器起始地址
-`define INST_MEM_END_ADDR    32'h0fffffff    // 指令存储器结束地址
+`define INST_MEM_START_ADDR  32'h0           // 指令存储器起始地�?
+`define INST_MEM_END_ADDR    32'h0fffffff    // 指令存储器结束地�?
 `define JTAG_RESET_FF_LEVELS 5
 
 `define ROM_DEPTH     8192                   // 指令存储器深度，单位为word(4字节)
@@ -107,10 +107,10 @@
 `define DECINFO_SYS_MRET          (`DECINFO_GRP_WIDTH+3)
 `define DECINFO_SYS_FENCE         (`DECINFO_GRP_WIDTH+4)
 
-// 最长的那组
+// �?长的那组
 `define DECINFO_WIDTH             `DECINFO_CSR_BUS_WIDTH
 
-// CSR寄存器地址
+// CSR寄存器地�?
 `define CSR_CYCLE       12'hc00
 `define CSR_CYCLEH      12'hc80
 `define CSR_MTVEC       12'h305
@@ -120,3 +120,4 @@
 `define CSR_MSTATUS     12'h300
 `define CSR_MSCRATCH    12'h340
 
+`define PLIC_ADDR_BASE  16'h0100

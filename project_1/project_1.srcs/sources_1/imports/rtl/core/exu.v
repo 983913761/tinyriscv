@@ -16,49 +16,53 @@
 
 `include "defines.v"
 
-// æ‰§è¡Œæ¨¡å—
-// çº¯ç»„åˆé€»è¾‘ç”µè·¯
+// Ö´ĞĞÄ£¿é
+// ´¿×éºÏÂß¼­µçÂ·
 module exu(
 
     input wire clk,
     input wire rst_n,
 
     // clint
-    input wire int_assert_i,                // ä¸­æ–­å‘ç”Ÿæ ‡å¿—
-    input wire[31:0] int_addr_i,            // ä¸­æ–­è·³è½¬åœ°å€
-    input wire int_stall_i,                 // æš‚åœæ ‡å¿—
-    output wire inst_ecall_o,               // ecallæŒ‡ä»¤
-    output wire inst_ebreak_o,              // ebreakæŒ‡ä»¤
-    output wire inst_mret_o,                // mretæŒ‡ä»¤
+    input wire clint_int_assert_i,                // ÖĞ¶Ï·¢Éú±êÖ¾
+    input wire[31:0] clint_int_addr_i,            // ÖĞ¶ÏÌø×ªµØÖ·
+    input wire int_stall_i,                 // ÔİÍ£±êÖ¾
+    output wire inst_ecall_o,               // ecallÖ¸Áî
+    output wire inst_ebreak_o,              // ebreakÖ¸Áî
+    output wire inst_mret_o,                // mretÖ¸Áî
+    
+    // plic
+    input wire plic_int_assert_i,                // ÖĞ¶Ï·¢Éú±êÖ¾
+    input wire[31:0] plic_int_addr_i,            // ÖĞ¶ÏÌø×ªµØÖ·
 
     // mem
-    input wire[31:0] mem_rdata_i,           // å†…å­˜è¾“å…¥æ•°æ®
+    input wire[31:0] mem_rdata_i,           // ÄÚ´æÊäÈëÊı¾İ
     input wire mem_req_ready_i,
     input wire mem_rsp_valid_i,
-    output wire[31:0] mem_wdata_o,          // å†™å†…å­˜æ•°æ®
-    output wire[31:0] mem_addr_o,           // è¯»ã€å†™å†…å­˜åœ°å€
-    output wire mem_we_o,                   // æ˜¯å¦è¦å†™å†…å­˜
-    output wire[3:0] mem_sel_o,             // å­—èŠ‚ä½
+    output wire[31:0] mem_wdata_o,          // Ğ´ÄÚ´æÊı¾İ
+    output wire[31:0] mem_addr_o,           // ¶Á¡¢Ğ´ÄÚ´æµØÖ·
+    output wire mem_we_o,                   // ÊÇ·ñÒªĞ´ÄÚ´æ
+    output wire[3:0] mem_sel_o,             // ×Ö½ÚÎ»
     output wire mem_req_valid_o,
     output wire mem_rsp_ready_o,
     output wire mem_access_misaligned_o,
 
     // gpr_reg
-    output wire[31:0] reg_wdata_o,          // å†™å¯„å­˜å™¨æ•°æ®
-    output wire reg_we_o,                   // æ˜¯å¦è¦å†™é€šç”¨å¯„å­˜å™¨
-    output wire[4:0] reg_waddr_o,           // å†™é€šç”¨å¯„å­˜å™¨åœ°å€
+    output wire[31:0] reg_wdata_o,          // Ğ´¼Ä´æÆ÷Êı¾İ
+    output wire reg_we_o,                   // ÊÇ·ñÒªĞ´Í¨ÓÃ¼Ä´æÆ÷
+    output wire[4:0] reg_waddr_o,           // Ğ´Í¨ÓÃ¼Ä´æÆ÷µØÖ·
 
     // csr_reg
     input wire[31:0] csr_rdata_i,
-    output wire[31:0] csr_raddr_o,          // è¯»CSRå¯„å­˜å™¨åœ°å€
-    output wire[31:0] csr_wdata_o,          // å†™CSRå¯„å­˜å™¨æ•°æ®
-    output wire csr_we_o,                   // æ˜¯å¦è¦å†™CSRå¯„å­˜å™¨
-    output wire[31:0] csr_waddr_o,          // å†™CSRå¯„å­˜å™¨åœ°å€
+    output wire[31:0] csr_raddr_o,          // ¶ÁCSR¼Ä´æÆ÷µØÖ·
+    output wire[31:0] csr_wdata_o,          // Ğ´CSR¼Ä´æÆ÷Êı¾İ
+    output wire csr_we_o,                   // ÊÇ·ñÒªĞ´CSR¼Ä´æÆ÷
+    output wire[31:0] csr_waddr_o,          // Ğ´CSR¼Ä´æÆ÷µØÖ·
 
     // to pipe_ctrl
-    output wire hold_flag_o,                // æ˜¯å¦æš‚åœæ ‡å¿—
-    output wire jump_flag_o,                // æ˜¯å¦è·³è½¬æ ‡å¿—
-    output wire[31:0] jump_addr_o,          // è·³è½¬ç›®çš„åœ°å€
+    output wire hold_flag_o,                // ÊÇ·ñÔİÍ£±êÖ¾
+    output wire jump_flag_o,                // ÊÇ·ñÌø×ª±êÖ¾
+    output wire[31:0] jump_addr_o,          // Ìø×ªÄ¿µÄµØÖ·
 
     // from idu_exu
     input wire[`DECINFO_WIDTH-1:0] dec_info_bus_i,
@@ -66,8 +70,8 @@ module exu(
     input wire[31:0] dec_pc_i,
     input wire[31:0] next_pc_i,
     input wire[4:0] rd_waddr_i,
-    input wire[31:0] reg1_rdata_i,          // é€šç”¨å¯„å­˜å™¨1è¾“å…¥æ•°æ®
-    input wire[31:0] reg2_rdata_i,          // é€šç”¨å¯„å­˜å™¨2è¾“å…¥æ•°æ®
+    input wire[31:0] reg1_rdata_i,          // Í¨ÓÃ¼Ä´æÆ÷1ÊäÈëÊı¾İ
+    input wire[31:0] reg2_rdata_i,          // Í¨ÓÃ¼Ä´æÆ÷2ÊäÈëÊı¾İ
     input wire rd_we_i
 
     );
@@ -361,8 +365,9 @@ module exu(
 
     assign reg_we_o = commit_reg_we_o;
 
-    assign jump_flag_o = bjp_cmp_res_o | bjp_op_jump_o | sys_op_fence_o | int_assert_i;
-    assign jump_addr_o = int_assert_i? int_addr_i:
+    assign jump_flag_o = bjp_cmp_res_o | bjp_op_jump_o | sys_op_fence_o | clint_int_assert_i | plic_int_assert_i;
+    assign jump_addr_o = clint_int_assert_i? clint_int_addr_i:
+                         plic_int_assert_i? plic_int_addr_i:
                          sys_op_fence_o? next_pc_i:
                          bjp_res_o;
     assign hold_flag_o = muldiv_stall_o | mem_stall_o;

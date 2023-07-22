@@ -12,7 +12,8 @@ module tinyriscv_soc_tb;
 
     reg clk;
     reg rst_n;
-
+    reg [1:0] gpio_t;
+    wire [1:0] gpio_o;
 
     always #10 clk = ~clk;     // 50MHz
 
@@ -25,13 +26,19 @@ module tinyriscv_soc_tb;
     initial begin
         clk = 0;
         rst_n = 1'b1;
-
+        gpio_t = 2'b0;
         $display("test running...");
         #100
         rst_n = 1'b0;
         #100
         rst_n = 1'b1;
-
+        #300
+        gpio_t[0] = 1'b1;
+        #500
+        gpio_t[0] = 1'b0;
+        gpio_t[1] = 1'b1;
+        #100
+        gpio_t[1] = 1'b0;
     end
     
     always@(posedge tinyriscv_soc_top_0.uart_0.uart_status[0])begin
@@ -40,13 +47,14 @@ module tinyriscv_soc_tb;
 
     // read mem data
     initial begin
-        $readmemh ("C://Users/YiZhi_W/Desktop/tinyriscv-bram/sim/inst.data", tinyriscv_soc_top_0.u_rom.u_gen_ram.ram);
+        $readmemh ("C://Users/YiZhi_W/Desktop/tinyriscv/sim/inst.data", tinyriscv_soc_top_0.u_rom.u_gen_ram.ram);
     end
 
-
+    assign gpio_o = gpio_t;
     tinyriscv_soc_top tinyriscv_soc_top_0(
         .clk(clk),
-        .rst_ext_i(rst_n)
+        .rst_ext_i(rst_n),
+        .gpio(gpio_o)
 `ifdef TEST_JTAG
         ,
         .jtag_TCK(TCK),

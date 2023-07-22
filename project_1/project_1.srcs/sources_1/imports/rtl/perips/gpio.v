@@ -14,7 +14,7 @@
  limitations under the License.                                          
  */
 
-// GPIOæ¨¡å—
+// GPIOÄ£¿é
 module gpio(
 
     input wire clk,
@@ -36,16 +36,16 @@ module gpio(
 
     );
 
-    // GPIOå¯„å­˜å™¨(åç§»)åœ°å€
+    // GPIO¼Ä´æÆ÷(Æ«ÒÆ)µØÖ·
     localparam GPIO_CTRL = 4'h0;
     localparam GPIO_DATA = 4'h4;
 
-    // GPIOæ§åˆ¶å¯„å­˜å™¨
-    // æ¯2ä½æ§åˆ¶1ä¸ªIOçš„è¾“å…¥ã€è¾“å‡ºæ¨¡å¼ï¼Œæœ€å¤šæ”¯æŒ16ä¸ªIO
-    // 0: é«˜é˜»ï¼Œ1ï¼šè¾“å‡ºï¼Œ2ï¼šè¾“å…¥
+    // GPIO¿ØÖÆ¼Ä´æÆ÷
+    // Ã¿2Î»¿ØÖÆ1¸öIOµÄÊäÈë¡¢Êä³öÄ£Ê½£¬×î¶àÖ§³Ö16¸öIO
+    // 0: ¸ß×è£¬1£ºÊä³ö£¬2£ºÊäÈë
     reg[31:0] gpio_ctrl;
 
-    // GPIOè¾“å…¥è¾“å‡ºæ•°æ®å¯„å­˜å™¨
+    // GPIOÊäÈëÊä³öÊı¾İ¼Ä´æÆ÷
     reg[31:0] gpio_data;
 
     assign reg_ctrl = gpio_ctrl;
@@ -56,7 +56,7 @@ module gpio(
     wire write_reg_ctrl_en = wen & (addr_i[3:0] == GPIO_CTRL);
     wire write_reg_data_en = wen & (addr_i[3:0] == GPIO_DATA);
 
-    // å†™gpio_ctrl
+    // Ğ´gpio_ctrl
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             gpio_ctrl <= 32'h0;
@@ -78,7 +78,7 @@ module gpio(
         end
     end
 
-    // å†™gpio_data
+    // Ğ´gpio_data
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             gpio_data <= 32'h0;
@@ -103,7 +103,7 @@ module gpio(
 
     reg[31:0] data_r;
 
-    // è¯»å¯„å­˜å™¨
+    // ¶Á¼Ä´æÆ÷
     always @ (posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             data_r <= 32'h0;

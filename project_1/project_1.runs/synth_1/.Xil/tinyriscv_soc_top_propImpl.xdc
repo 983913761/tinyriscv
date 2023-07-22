@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/constrs_1/new/cons.xdc rfile:../../../project_1.srcs/constrs_1/new/cons.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/constrs_1/new/cons.xdc rfile:../../../project_1.srcs/constrs_1/new/cons.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AB11 [get_ports clk]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
@@ -21,3 +21,5 @@ set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN A12 [get_ports {gpio[1]}]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN B13 [get_ports {gpio[0]}]
+set_property src_info {type:XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets jtag_TCK_IBUF_inst/O]

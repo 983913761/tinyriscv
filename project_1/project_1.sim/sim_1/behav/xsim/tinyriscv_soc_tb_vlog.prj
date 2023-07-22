@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib "C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/defines.v" --include "../../../../project_1.srcs/sources_1/imports/rtl/core" \
+verilog xil_defaultlib "C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/defines.v" --include "../../../../project_1.srcs/sources_1/imports/rtl/core" \
 "../../../../project_1.srcs/sources_1/imports/rtl/core/clint.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/core/csr_reg.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/core/divider.v" \
@@ -24,6 +24,8 @@ verilog xil_defaultlib "C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/projec
 "../../../../project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/core/pipe_ctrl.v" \
+"../../../../project_1.srcs/sources_1/imports/core/plic.v" \
+"../../../../project_1.srcs/sources_1/imports/core/plic_gateway.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/perips/ram.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/sys_bus/rib.v" \
 "../../../../project_1.srcs/sources_1/imports/rtl/perips/rom.v" \

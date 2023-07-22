@@ -17,119 +17,119 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu2cg
 INFO: [Device 21-403] Loading part xczu2cg-sfvc784-1-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12452
-WARNING: [Synth 8-6901] identifier 'div_ready' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:44]
-WARNING: [Synth 8-6901] identifier 'req' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:60]
-WARNING: [Synth 8-6901] identifier 'req' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:68]
-WARNING: [Synth 8-6901] identifier 'ack' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:71]
-WARNING: [Synth 8-6901] identifier 'ack' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:79]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_dm with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:60]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_dm with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:61]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_dm with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:62]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:42]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:43]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:44]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:46]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:47]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:49]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:50]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:51]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:67]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:68]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:69]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:70]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:71]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:72]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:73]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:74]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:75]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:76]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:77]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:78]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:79]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:80]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:81]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:82]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:85]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:86]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:87]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:88]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_top with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:54]
-WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_top with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:55]
+INFO: [Synth 8-7075] Helper process launched with PID 13656
+WARNING: [Synth 8-6901] identifier 'div_ready' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:44]
+WARNING: [Synth 8-6901] identifier 'req' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:60]
+WARNING: [Synth 8-6901] identifier 'req' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:68]
+WARNING: [Synth 8-6901] identifier 'ack' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:71]
+WARNING: [Synth 8-6901] identifier 'ack' is used before its declaration [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:79]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_dm with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:60]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_dm with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:61]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_dm with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:62]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:42]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:43]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:44]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:46]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:47]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:49]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:50]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:51]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:67]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:68]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:69]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:70]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:71]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:72]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:73]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:74]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:75]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:76]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:77]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:78]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:79]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:80]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:81]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:82]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:85]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:86]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:87]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_driver with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:88]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_top with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:54]
+WARNING: [Synth 8-2507] parameter declaration becomes local in jtag_top with formal parameter declaration list [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:55]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1499.957 ; gain = 74.820
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1499.504 ; gain = 75.422
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'tinyriscv_soc_top' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/top/tinyriscv_soc_top.v:20]
-INFO: [Synth 8-6157] synthesizing module 'rst_ctrl' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/rst_ctrl.v:20]
-INFO: [Synth 8-6157] synthesizing module 'gen_ticks_sync' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_buf.v:18]
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv_soc_top' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/top/tinyriscv_soc_top.v:20]
+INFO: [Synth 8-6157] synthesizing module 'rst_ctrl' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/rst_ctrl.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_ticks_sync' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_buf.v:18]
 	Parameter DP bound to: 2 - type: integer 
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'gen_rst_0_dff' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:46]
+INFO: [Synth 8-6157] synthesizing module 'gen_rst_0_dff' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:46]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_rst_0_dff' (1#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'gen_ticks_sync' (2#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_buf.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'rst_ctrl' (3#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/rst_ctrl.v:20]
-INFO: [Synth 8-6157] synthesizing module 'tinyriscv_core' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/tinyriscv_core.v:20]
-INFO: [Synth 8-6157] synthesizing module 'ifu' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu.v:20]
-INFO: [Synth 8-6157] synthesizing module 'gen_en_dff' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'gen_rst_0_dff' (1#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'gen_ticks_sync' (2#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_buf.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'rst_ctrl' (3#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/rst_ctrl.v:20]
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv_core' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/tinyriscv_core.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ifu' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_en_dff' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
 	Parameter DW bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff' (4#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
-INFO: [Synth 8-6155] done synthesizing module 'ifu' (5#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu.v:20]
-INFO: [Synth 8-6157] synthesizing module 'pipe_ctrl' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/pipe_ctrl.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'pipe_ctrl' (6#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/pipe_ctrl.v:21]
-INFO: [Synth 8-6157] synthesizing module 'gpr_reg' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/gpr_reg.v:20]
-INFO: [Synth 8-6157] synthesizing module 'gen_en_dffnr' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff' (4#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'ifu' (5#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu.v:20]
+INFO: [Synth 8-6157] synthesizing module 'pipe_ctrl' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/pipe_ctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'pipe_ctrl' (6#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/pipe_ctrl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'gpr_reg' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/gpr_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_en_dffnr' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:152]
 	Parameter DW bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_en_dffnr' (7#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:152]
-INFO: [Synth 8-6155] done synthesizing module 'gpr_reg' (8#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/gpr_reg.v:20]
-INFO: [Synth 8-6157] synthesizing module 'csr_reg' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/csr_reg.v:20]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/csr_reg.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'csr_reg' (9#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/csr_reg.v:20]
-INFO: [Synth 8-6157] synthesizing module 'ifu_idu' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu_idu.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_idu' (10#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu_idu.v:20]
-INFO: [Synth 8-6157] synthesizing module 'idu' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/idu.v:21]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/idu.v:268]
-INFO: [Synth 8-6155] done synthesizing module 'idu' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/idu.v:21]
-INFO: [Synth 8-6157] synthesizing module 'idu_exu' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/idu_exu.v:20]
-INFO: [Synth 8-6157] synthesizing module 'gen_en_dff__parameterized0' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'gen_en_dffnr' (7#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'gpr_reg' (8#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/gpr_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'csr_reg' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/csr_reg.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/csr_reg.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'csr_reg' (9#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/csr_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ifu_idu' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu_idu.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_idu' (10#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/ifu_idu.v:20]
+INFO: [Synth 8-6157] synthesizing module 'idu' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/idu.v:21]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/idu.v:268]
+INFO: [Synth 8-6155] done synthesizing module 'idu' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/idu.v:21]
+INFO: [Synth 8-6157] synthesizing module 'idu_exu' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/idu_exu.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_en_dff__parameterized0' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
 	Parameter DW bound to: 19 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff__parameterized0' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
-INFO: [Synth 8-6157] synthesizing module 'gen_en_dff__parameterized1' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff__parameterized0' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6157] synthesizing module 'gen_en_dff__parameterized1' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
 	Parameter DW bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff__parameterized1' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
-INFO: [Synth 8-6157] synthesizing module 'gen_en_dff__parameterized2' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff__parameterized1' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6157] synthesizing module 'gen_en_dff__parameterized2' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
 	Parameter DW bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff__parameterized2' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
-INFO: [Synth 8-6155] done synthesizing module 'idu_exu' (12#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/idu_exu.v:20]
-INFO: [Synth 8-6157] synthesizing module 'exu' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu.v:21]
-INFO: [Synth 8-6157] synthesizing module 'exu_dispatch' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_dispatch.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'exu_dispatch' (13#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_dispatch.v:20]
-INFO: [Synth 8-6157] synthesizing module 'exu_alu_datapath' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_alu_datapath.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_alu_datapath.v:135]
-INFO: [Synth 8-6155] done synthesizing module 'exu_alu_datapath' (14#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_alu_datapath.v:23]
-INFO: [Synth 8-6157] synthesizing module 'exu_mem' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:20]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:68]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:80]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:92]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:104]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:116]
-INFO: [Synth 8-6155] done synthesizing module 'exu_mem' (15#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:20]
-INFO: [Synth 8-6157] synthesizing module 'exu_muldiv' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:20]
-INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/divider.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'gen_en_dff__parameterized2' (11#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_dff.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'idu_exu' (12#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/idu_exu.v:20]
+INFO: [Synth 8-6157] synthesizing module 'exu' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu.v:21]
+INFO: [Synth 8-6157] synthesizing module 'exu_dispatch' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_dispatch.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'exu_dispatch' (13#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_dispatch.v:20]
+INFO: [Synth 8-6157] synthesizing module 'exu_alu_datapath' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_alu_datapath.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_alu_datapath.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'exu_alu_datapath' (14#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_alu_datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'exu_mem' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:80]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:92]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'exu_mem' (15#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_mem.v:20]
+INFO: [Synth 8-6157] synthesizing module 'exu_muldiv' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:20]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/divider.v:22]
 	Parameter STATE_IDLE bound to: 4'b0001 
 	Parameter STATE_START bound to: 4'b0010 
 	Parameter STATE_CALC bound to: 4'b0100 
 	Parameter STATE_END bound to: 4'b1000 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/divider.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'divider' (16#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/divider.v:22]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'exu_muldiv' (17#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:20]
-INFO: [Synth 8-6157] synthesizing module 'exu_commit' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:20]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:66]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:81]
-INFO: [Synth 8-6155] done synthesizing module 'exu_commit' (18#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'exu' (19#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/exu.v:21]
-INFO: [Synth 8-6157] synthesizing module 'clint' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/clint.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/divider.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (16#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/divider.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'exu_muldiv' (17#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_muldiv.v:20]
+INFO: [Synth 8-6157] synthesizing module 'exu_commit' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:66]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'exu_commit' (18#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu_commit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'exu' (19#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/exu.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clint' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/clint.v:21]
 	Parameter S_INT_IDLE bound to: 4'b0001 
 	Parameter S_INT_SYNC_ASSERT bound to: 4'b0010 
 	Parameter S_INT_ASYNC_ASSERT bound to: 4'b0100 
@@ -139,36 +139,51 @@ INFO: [Synth 8-6157] synthesizing module 'clint' [C:/Users/YiZhi_W/Desktop/tinyr
 	Parameter S_CSR_MEPC bound to: 5'b00100 
 	Parameter S_CSR_MSTATUS_MRET bound to: 5'b01000 
 	Parameter S_CSR_MCAUSE bound to: 5'b10000 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/clint.v:120]
-INFO: [Synth 8-6155] done synthesizing module 'clint' (20#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/clint.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_core' (21#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/core/tinyriscv_core.v:20]
-INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/rom.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/clint.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'clint' (20#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/clint.v:21]
+INFO: [Synth 8-6157] synthesizing module 'plic' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic.v:19]
+	Parameter S_INT_IDLE bound to: 4'b0001 
+	Parameter S_INT_EXIT_ASSERT bound to: 4'b0010 
+	Parameter S_CSR_IDLE bound to: 4'b0001 
+	Parameter S_CSR_MSTATUS bound to: 4'b0010 
+	Parameter S_CSR_MEPC bound to: 4'b0100 
+	Parameter S_CSR_MCAUSE bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic.v:116]
+INFO: [Synth 8-6157] synthesizing module 'plic_gateway' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic_gateway.v:23]
+	Parameter ID bound to: 4'b0000 
+INFO: [Synth 8-6155] done synthesizing module 'plic_gateway' (21#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic_gateway.v:23]
+INFO: [Synth 8-6157] synthesizing module 'plic_gateway__parameterized0' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic_gateway.v:23]
+	Parameter ID bound to: 4'b0001 
+INFO: [Synth 8-6155] done synthesizing module 'plic_gateway__parameterized0' (21#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic_gateway.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'plic' (22#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/core/plic.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_core' (23#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/core/tinyriscv_core.v:20]
+INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/rom.v:20]
 	Parameter DP bound to: 8192 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'gen_ram' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_ram' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
 	Parameter DP bound to: 8192 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter MW bound to: 4 - type: integer 
 	Parameter AW bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_ram' (22#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
-INFO: [Synth 8-6157] synthesizing module 'vld_rdy' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/vld_rdy.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'gen_ram' (24#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
+INFO: [Synth 8-6157] synthesizing module 'vld_rdy' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/vld_rdy.v:18]
 	Parameter CUT_READY bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vld_rdy' (23#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/vld_rdy.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'rom' (24#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/rom.v:20]
-INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/ram.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'vld_rdy' (25#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/vld_rdy.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (26#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/rom.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/ram.v:20]
 	Parameter DP bound to: 4096 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'gen_ram__parameterized0' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_ram__parameterized0' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
 	Parameter DP bound to: 4096 - type: integer 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter MW bound to: 4 - type: integer 
 	Parameter AW bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_ram__parameterized0' (24#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'ram' (25#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/ram.v:20]
-INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/timer.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'gen_ram__parameterized0' (26#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/gen_ram.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (27#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/ram.v:20]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/timer.v:20]
 	Parameter REG_CTRL bound to: 4'b0000 
 	Parameter REG_COUNT bound to: 4'b0100 
 	Parameter REG_VALUE bound to: 4'b1000 
-INFO: [Synth 8-6155] done synthesizing module 'timer' (26#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/timer.v:20]
-INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (28#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/timer.v:20]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:20]
 	Parameter BAUD_115200 bound to: 434 - type: integer 
 	Parameter S_IDLE bound to: 4'b0001 
 	Parameter S_START bound to: 4'b0010 
@@ -179,21 +194,21 @@ INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/YiZhi_W/Desktop/tinyri
 	Parameter UART_BAUD bound to: 8'b00001000 
 	Parameter UART_TXDATA bound to: 8'b00001100 
 	Parameter UART_RXDATA bound to: 8'b00010000 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:271]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:289]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:400]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (27#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:20]
-INFO: [Synth 8-6157] synthesizing module 'gpio' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/gpio.v:18]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:271]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:289]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:400]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (29#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/uart.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/gpio.v:18]
 	Parameter GPIO_CTRL bound to: 4'b0000 
 	Parameter GPIO_DATA bound to: 4'b0100 
-INFO: [Synth 8-6155] done synthesizing module 'gpio' (28#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/perips/gpio.v:18]
-INFO: [Synth 8-6157] synthesizing module 'jtag_top' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (30#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/perips/gpio.v:18]
+INFO: [Synth 8-6157] synthesizing module 'jtag_top' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:20]
 	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
 	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
 	Parameter DMI_OP_BITS bound to: 2 - type: integer 
 	Parameter DM_RESP_BITS bound to: 40 - type: integer 
 	Parameter DTM_REQ_BITS bound to: 40 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'jtag_driver' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:18]
+INFO: [Synth 8-6157] synthesizing module 'jtag_driver' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:18]
 	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
 	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
 	Parameter DMI_OP_BITS bound to: 2 - type: integer 
@@ -225,22 +240,22 @@ INFO: [Synth 8-6157] synthesizing module 'jtag_driver' [C:/Users/YiZhi_W/Desktop
 	Parameter REG_IDCODE bound to: 5'b00001 
 	Parameter REG_DMI bound to: 5'b10001 
 	Parameter REG_DTMCS bound to: 5'b10000 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:157]
-INFO: [Synth 8-6157] synthesizing module 'full_handshake_tx' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:157]
+INFO: [Synth 8-6157] synthesizing module 'full_handshake_tx' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:23]
 	Parameter DW bound to: 40 - type: integer 
 	Parameter STATE_IDLE bound to: 3'b001 
 	Parameter STATE_ASSERT bound to: 3'b010 
 	Parameter STATE_DEASSERT bound to: 3'b100 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:115]
-INFO: [Synth 8-6155] done synthesizing module 'full_handshake_tx' (29#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:23]
-INFO: [Synth 8-6157] synthesizing module 'full_handshake_rx' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'full_handshake_tx' (31#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_handshake_rx' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:23]
 	Parameter DW bound to: 40 - type: integer 
 	Parameter STATE_IDLE bound to: 2'b01 
 	Parameter STATE_DEASSERT bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:104]
-INFO: [Synth 8-6155] done synthesizing module 'full_handshake_rx' (30#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'jtag_driver' (31#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:18]
-INFO: [Synth 8-6157] synthesizing module 'jtag_dm' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'full_handshake_rx' (32#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/utils/full_handshake_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_driver' (33#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_driver.v:18]
+INFO: [Synth 8-6157] synthesizing module 'jtag_dm' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:22]
 	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
 	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
 	Parameter DMI_OP_BITS bound to: 2 - type: integer 
@@ -262,46 +277,49 @@ INFO: [Synth 8-6157] synthesizing module 'jtag_dm' [C:/Users/YiZhi_W/Desktop/tin
 	Parameter STATE_IDLE bound to: 3'b001 
 	Parameter STATE_EXE bound to: 3'b010 
 	Parameter STATE_END bound to: 3'b100 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:232]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:189]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:178]
-INFO: [Synth 8-6155] done synthesizing module 'jtag_dm' (32#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'jtag_top' (33#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:20]
-INFO: [Synth 8-6157] synthesizing module 'rib' [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/sys_bus/rib.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:189]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_dm' (34#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_dm.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_top' (35#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/debug/jtag_top.v:20]
+INFO: [Synth 8-6157] synthesizing module 'rib' [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/sys_bus/rib.v:19]
 	Parameter MASTER_NUM bound to: 3 - type: integer 
 	Parameter SLAVE_NUM bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rib' (34#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/sys_bus/rib.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_soc_top' (35#1) [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/sources_1/imports/rtl/top/tinyriscv_soc_top.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'rib' (36#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/sys_bus/rib.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_soc_top' (37#1) [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/sources_1/imports/rtl/top/tinyriscv_soc_top.v:20]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1581.152 ; gain = 156.016
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1580.250 ; gain = 156.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1599.055 ; gain = 173.918
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1580.250 ; gain = 156.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1599.055 ; gain = 173.918
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1580.250 ; gain = 156.168
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1599.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.145 . Memory (MB): peak = 1580.250 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/constrs_1/new/cons.xdc]
-Finished Parsing XDC File [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/constrs_1/new/cons.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tinyriscv_soc_top_propImpl.xdc].
+Parsing XDC File [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/constrs_1/new/cons.xdc]
+WARNING: [Vivado 12-507] No nets matched 'jtag_TCK_IBUF_inst/O'. [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/constrs_1/new/cons.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/constrs_1/new/cons.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tinyriscv_soc_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/tinyriscv_soc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1718.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1690.434 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1718.625 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1690.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1718.625 ; gain = 293.488
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1690.434 ; gain = 266.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -309,16 +327,17 @@ Start Loading Part and Timing Information
 Loading part: xczu2cg-sfvc784-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1718.625 ; gain = 293.488
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1690.434 ; gain = 266.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1718.625 ; gain = 293.488
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1690.434 ; gain = 266.352
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'divider'
 INFO: [Synth 8-802] inferred FSM for state register 'csr_state_reg' in module 'clint'
+INFO: [Synth 8-802] inferred FSM for state register 'csr_state_reg' in module 'plic'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'full_handshake_tx'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'full_handshake_rx'
@@ -345,6 +364,16 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'd
       S_CSR_MSTATUS_MRET |                            01000 |                            01000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'csr_state_reg' in module 'clint'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              S_CSR_IDLE |                             0001 |                             0001
+              S_CSR_MEPC |                             0100 |                             0100
+           S_CSR_MSTATUS |                             0010 |                             0010
+            S_CSR_MCAUSE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'csr_state_reg' in module 'plic'
 WARNING: [Synth 8-6841] Block RAM (sel_width[1].i_lt_8.ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
 (address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
 INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"gen_ram:/sel_width[1].i_lt_8.ram_reg"'.
@@ -413,7 +442,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'jtag_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'jtag_dm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1718.625 ; gain = 293.488
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1690.434 ; gain = 266.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -430,7 +459,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               40 Bit    Registers := 8     
-	               32 Bit    Registers := 86    
+	               32 Bit    Registers := 90    
 	               19 Bit    Registers := 1     
 	               16 Bit    Registers := 3     
 	               13 Bit    Registers := 1     
@@ -438,7 +467,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 52    
+	                1 Bit    Registers := 57    
 +---RAMs : 
 	             256K Bit	(8192 X 32 bit)          RAMs := 1     
 	             128K Bit	(4096 X 32 bit)          RAMs := 1     
@@ -446,19 +475,21 @@ Detailed RTL Component Info :
 	   4 Input   40 Bit        Muxes := 4     
 	   3 Input   40 Bit        Muxes := 3     
 	   2 Input   40 Bit        Muxes := 1     
-	   2 Input   32 Bit        Muxes := 86    
+	   2 Input   32 Bit        Muxes := 88    
 	   9 Input   32 Bit        Muxes := 1     
 	   3 Input   32 Bit        Muxes := 4     
 	   5 Input   32 Bit        Muxes := 8     
-	   4 Input   32 Bit        Muxes := 6     
+	   4 Input   32 Bit        Muxes := 7     
 	   8 Input   32 Bit        Muxes := 1     
 	   2 Input   31 Bit        Muxes := 1     
 	   2 Input   19 Bit        Muxes := 1     
 	   2 Input   16 Bit        Muxes := 21    
 	  16 Input   16 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
 	   4 Input   12 Bit        Muxes := 1     
 	   5 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 3     
 	   5 Input    8 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 4     
@@ -466,19 +497,19 @@ Detailed RTL Component Info :
 	   4 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 9     
 	   9 Input    4 Bit        Muxes := 1     
-	   5 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 3     
 	   4 Input    4 Bit        Muxes := 2     
 	   3 Input    4 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 9     
 	   4 Input    3 Bit        Muxes := 3     
 	   8 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 9     
 	   3 Input    2 Bit        Muxes := 2     
 	   5 Input    2 Bit        Muxes := 2     
 	   7 Input    1 Bit        Muxes := 19    
-	   2 Input    1 Bit        Muxes := 49    
-	   5 Input    1 Bit        Muxes := 12    
-	   4 Input    1 Bit        Muxes := 55    
+	   2 Input    1 Bit        Muxes := 54    
+	   5 Input    1 Bit        Muxes := 14    
+	   4 Input    1 Bit        Muxes := 56    
 	   6 Input    1 Bit        Muxes := 2     
 	   3 Input    1 Bit        Muxes := 11    
 	   8 Input    1 Bit        Muxes := 2     
@@ -528,7 +559,7 @@ RAM Pipeline Warning: Read Address Register Found For RAM u_gen_ram/sel_width[1]
 RAM Pipeline Warning: Read Address Register Found For RAM u_gen_ram/sel_width[1].i_lt_8.ram_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM u_gen_ram/sel_width[1].i_lt_8.ram_reg. We will not be able to pipeline it. This may degrade performance. 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1736.453 ; gain = 311.316
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1752.168 ; gain = 328.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -562,13 +593,13 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 2343.781 ; gain = 918.645
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 2342.953 ; gain = 918.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 2346.398 ; gain = 921.262
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 2342.953 ; gain = 918.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -597,7 +628,7 @@ INFO: [Synth 8-7052] The timing for the instance u_ram/u_gen_ram/sel_width[1].i_
 INFO: [Synth 8-7052] The timing for the instance u_ram/u_gen_ram/sel_width[1].i_lt_8.ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance u_ram/u_gen_ram/sel_width[1].i_lt_8.ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 2557.234 ; gain = 1132.098
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 2558.328 ; gain = 1134.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -615,37 +646,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -671,35 +702,36 @@ Report Cell Usage:
 |8     |DSP_OUTPUT      |     4|
 |9     |DSP_PREADD      |     4|
 |10    |DSP_PREADD_DATA |     4|
-|11    |LUT1            |   291|
-|12    |LUT2            |   660|
-|13    |LUT3            |   294|
-|14    |LUT4            |   741|
-|15    |LUT5            |   782|
-|16    |LUT6            |  1722|
-|17    |MUXF7           |   256|
-|18    |RAMB36E2        |    12|
-|21    |FDCE            |  1786|
-|22    |FDPE            |    22|
-|23    |FDRE            |  1106|
-|24    |FDSE            |     2|
-|25    |IBUF            |     6|
-|26    |IOBUF           |     2|
-|27    |OBUF            |     3|
+|11    |LUT1            |   286|
+|12    |LUT2            |   666|
+|13    |LUT3            |   287|
+|14    |LUT4            |   695|
+|15    |LUT5            |   785|
+|16    |LUT6            |  1840|
+|17    |MUXF7           |   252|
+|18    |MUXF8           |    58|
+|19    |RAMB36E2        |    12|
+|22    |FDCE            |  1830|
+|23    |FDPE            |    23|
+|24    |FDRE            |  1106|
+|25    |FDSE            |     2|
+|26    |IBUF            |     6|
+|27    |IOBUF           |     2|
+|28    |OBUF            |     3|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 2562.512 ; gain = 1017.805
-Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 2562.512 ; gain = 1137.375
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:33 . Memory (MB): peak = 2563.594 ; gain = 1029.328
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2563.594 ; gain = 1139.512
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2574.582 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 344 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 2576.629 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 398 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2580.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2582.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   BUFG => BUFGCE: 2 instances
@@ -708,9 +740,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-153 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+162 Infos, 42 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 2580.770 ; gain = 1507.469
-INFO: [Common 17-1381] The checkpoint 'C:/Users/YiZhi_W/Desktop/tinyriscv-bram/project_1/project_1.runs/synth_1/tinyriscv_soc_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:49 . Memory (MB): peak = 2582.832 ; gain = 1501.977
+INFO: [Common 17-1381] The checkpoint 'C:/Users/YiZhi_W/Desktop/tinyriscv/project_1/project_1.runs/synth_1/tinyriscv_soc_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file tinyriscv_soc_top_utilization_synth.rpt -pb tinyriscv_soc_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 18 09:12:56 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 21 10:10:06 2023...
